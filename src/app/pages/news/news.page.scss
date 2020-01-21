@@ -1,0 +1,25 @@
+// .small-text {
+// 	color: var(--ion-color-tertiary);
+// }
+
+.source-label {
+	color: var(--ion-color-tertiary);
+	vertical-align: middle;
+}
+
+.icon {
+	vertical-align: middle;
+	color: var(--ion-color-tertiary);
+}
+
+.news-text {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	size: 10px;
+	color: var(ion-color-primary-contrast);
+}
+
+ion-text {
+	color: var(ion-color-primary-contrast);
+}

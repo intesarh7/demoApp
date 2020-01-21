@@ -1,0 +1,39 @@
+.active {
+    color: var(--ion-color-primary);
+
+    ion-icon {
+        color: var(--ion-color-secondary);
+    }
+}
+
+.iconGlobe {
+    color: var(--ion-color-success);
+}
+
+ion-toggle {
+    color: var(--ion-color-secondary);
+}
+
+.icon {
+    vertical-align: middle;
+    color: var(--ion-color-tertiary);
+}
+
+.news-text{
+	line-height: 100%!important;
+    font-size: 12px!important;
+}
+
+._newstime {
+    position: absolute;
+	right: 5px;
+	bottom: 0;
+    font-size: 11px;
+}
+
+._newssource {
+    position: absolute;
+	left:5px;
+	bottom: 0;
+    font-size: 11px;
+}
