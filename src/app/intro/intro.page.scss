@@ -1,0 +1,24 @@
+ion-slide{
+    height: 100vh;
+    flex-direction: column ;
+}
+ion-img{
+    max-width: 50vw;
+    max-height: 50vw;
+    overflow: hidden;
+}
+.slide-one{
+    background-color: #fff;
+    color: #333333;
+}
+.slide-two{
+    background-color: #fff;
+    color: #333333;
+}
+.labelIntro{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.labelIntro span{
+    font-size: 14px;
+}
