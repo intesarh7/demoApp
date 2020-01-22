@@ -116,7 +116,7 @@ export class AppComponent {
 	
 	this.storage.get('storage_xxx').then((res)=> {
 		if (res == null)	{
-			this.navCtrl.navigateRoot('/login');
+			this.navCtrl.navigateRoot('/intro');
 		} else{
 			this.navCtrl.navigateRoot('/app');
 		}
@@ -143,7 +143,7 @@ export class AppComponent {
 
 	async prosesLogout(){
 		this.storage.clear();
-		this.navCtrl.navigateRoot('/login');
+		this.navCtrl.navigateRoot('/intro');
 		const toast = await this.toastController.create({
 			message: 'Logout Successfuly',
 			duration: 1500,

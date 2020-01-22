@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
 	{
 		path: '',
-		redirectTo: '/app/tabs/news',
+		redirectTo: 'login',
 		pathMatch: 'full'
 	},
 	{
@@ -26,7 +26,12 @@ const routes: Routes = [
   	{ 
 	  path: 'signup', 
 	  loadChildren: './public/signup/signup.module#SignupPageModule' 
+	},
+  	{ 
+		path: 'intro', 
+		loadChildren: './intro/intro.module#IntroPageModule' 
 	}
+
 ];
 
 @NgModule({
