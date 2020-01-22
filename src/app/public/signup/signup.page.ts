@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ToastController, LoadingController, AlertController } from '@ionic/angular';
+import { ToastController, LoadingController, AlertController, MenuController } from '@ionic/angular';
 import { AccessProviders } from '../../providers/access_providers';
 
 
@@ -28,11 +28,17 @@ export class SignupPage implements OnInit {
     private loadingCtrl: LoadingController,
     private alertCtrl: AlertController,
     private accsProvidr: AccessProviders,
+    public menu: MenuController,
   ) { }
 
   ionViewDidEnter(){
     this.disabledButton = false;
+    this.menu.swipeGesture(false);
   }
+
+  ionViewWillLeave() {
+    this.menu.swipeGesture(true);
+   }
 
   ngOnInit() {
   }

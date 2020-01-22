@@ -30,7 +30,17 @@ export class LoginPage implements OnInit {
 
   ionViewDidEnter(){
     this.disabledButton = false;
+    this.menu.swipeGesture(false);
   }
+
+   
+
+  ionViewWillLeave() {
+    this.menu.swipeGesture(true);
+   }
+
+
+
 
   async tryLogin(){
     if(this.email_address== ''){
